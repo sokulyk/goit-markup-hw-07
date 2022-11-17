@@ -92,6 +92,7 @@ ul {
 /* цвет ховера и текущ. ссылки*/
 .links:hover,
 .current {
+  text-decoration: none;
   position: relative;
   color: var(--accent-color);
 }
