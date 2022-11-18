@@ -18,25 +18,23 @@
 <body>
     <header class="header">
         <div class="container header__container">
-
-
             <nav class="header__nav">
                 <a href="./index.html" class="logo"><span class="logo-accent">Web</span><span>Studio</span></a>
-                <ul class="list header__menu">
-                    <li><a class="links hat" href="./index.html">Студія</a></li>
-                    <li><a class="links hat current" href="./portfolio.html">Портфоліо</a></li>
-                    <li><a class="links hat" href="#">Контакти</a></li>
+                <ul class="header__menu">
+                    <li><a class="header__links links" href="./index.html">Студія</a></li>
+                    <li><a class="header__links current" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="header__links links" href="#">Контакти</a></li>
                 </ul>
             </nav>
 
-            <ul class="list header__links__contacts">
-                <li><a class="links contacts" href="mailto:info@devstudio.com">
-                        <svg class="contact-icons" width="16" height="12">
+            <ul class="header__nav-contacts">
+                <li><a class="header__contacts links" href="mailto:info@devstudio.com">
+                        <svg class="header__icons svg-icons" width="16" height="12">
                             <use href="./images/icons.svg#icon-env"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li><a class="links contacts" href="tel:+380961111111">
-                        <svg class="contact-icons" width="10" height="16">
+                <li><a class="header__contacts links" href="tel:+380961111111">
+                        <svg class="header__icons svg-icons" width="10" height="16">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -212,49 +210,50 @@
         </section>
     </main>
 
-    <footer class="footer-base">
+    <footer class="footer__section">
         <!-- Всередині має бути дів контейнер -->
-        <div class="container header__container">
+        <div class="footer__container container">
             <div>
                 <a href="./index.html" class="logo footer">
                     <span class="logo-accent">Web</span><span class="logo-white">Studio</span></a>
-                <address class="address-style">
+                <address class="footer__address">
                     <!-- <section> -->
-                    <ul class="list">
-                        <li class="address-string"><a class="links street-links"
+                    <ul>
+                        <li class="footer__address-string"><a class="links street-links"
                                 href="https://goo.gl/maps/GKhobsWF1xFbK7M66">м. Київ, пр-т Лесі
                                 Українки,
                                 26</a></li>
-                        <li class="address-string"><a class="links foot-links"
+                        <li class="footer__address-string"><a class="links foot-links"
                                 href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="address-string"><a class="links foot-links" href="tel:+380961111111">+38 096 111 11
+                        <li class="footer__address-string"><a class="links foot-links" href="tel:+380961111111">+38 096 111 11
                                 11</a></li>
                     </ul>
                     <!-- </section> -->
                 </address>
             </div>
-            <div class="socnet-container">
-                <p class="socnet-par">Приєднуйтесь</p>
+            <div class="footer__social-block">
+                <p class="footer__social-text">Приєднуйтесь</p>
                 <!-- 6. .socnet-header зробіть р, це не заголовок -->
                 <!-- <h3 class="socnet-header">Приєднуйтесь</h3> -->
-                <ul class="list socnet-list">
-                    <li class="socnet-item"><a href="" class="socnet-link">
-                            <svg class="socnet-icons" width="20" height="20">
+                <ul class="footer__social-list">
+                    <li>
+                        <a href="" class="socnet-link">
+                            <svg class="footer__icons" width="20" height="20">
                                 <use href="./images/icons.svg#icon-insta"></use>
                             </svg></a>
                     </li>
-                    <li class="socnet-item"><a href="" class="socnet-link">
-                            <svg class="socnet-icons" width="20" height="20">
+                    <li><a href="" class="socnet-link">
+                            <svg class="footer__icons" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a></li>
-                    <li class="socnet-item"><a href="" class="socnet-link">
-                            <svg class="socnet-icons" width="20" height="20">
+                    <li><a href="" class="socnet-link">
+                            <svg class="footer__icons" width="20" height="20">
                                 <use href="./images/icons.svg#icon-fb"></use>
                             </svg>
                         </a></li>
-                    <li class="socnet-item"><a href="" class="socnet-link">
-                            <svg class="socnet-icons" width="20" height="20">
+                    <li><a href="" class="socnet-link">
+                            <svg class="footer__icons" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a></li>
