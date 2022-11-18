@@ -570,26 +570,23 @@ h2 {
 
 /* портфолио */
 
+.portfolio {
+  border: 0px solid black;
+  /* margin-top: 94px; */
+  /* margin-bottom: 94px; */
+}
+
 /* секция фильтры */
 
-/* 31. .portfolio-container повинен бути .container , 
-для секції задайте верхній і нижній паддинги */
-
-.portfolio-container {
-  border: 0px solid black;
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
-
-.filters_container {
-  width: 575px;
-  margin: auto;
-  padding-bottom: 34px;
-}
+/* .filters_container { */
+  /* width: 575px; */
+  /* margin: auto; */
+  /* padding-bottom: 34px; */
+/* } */
 
 /* 34. Для .filters_list задайте  */
 
-.filters_list {
+.portfolio__filter {
   display: flex;
   justify-content: center;
   gap: 8px;
