@@ -71,6 +71,7 @@ ul {
 /* стиль ссылкок шапка */
 .header__links,
 .header__contacts {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -90,12 +91,28 @@ ul {
 }
 
 /* цвет ховера и текущ. ссылки*/
+.header__links:hover,
+.header__links--current {
+  /* text-decoration: none; */
+  position: relative;
+  color: var(--accent-color);
+}
+
+.header__links:focus {
+  color: green;
+}
+
+.header__links:active {
+  color: red;
+}
+
+/* цвет ховера и текущ. ссылки
 .links:hover,
 .current {
   text-decoration: none;
   position: relative;
   color: var(--accent-color);
-}
+}*/
 
 .current::after {
   display: inline-block;
