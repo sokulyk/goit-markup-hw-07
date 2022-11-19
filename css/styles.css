@@ -48,6 +48,7 @@ ul {
 /* 28. Для лого в футері потрібно задати нижній марджин */
 
 .logo__footer {
+  text-decoration: none;
   display: block;
   margin-bottom: 20px;
 }
@@ -62,33 +63,7 @@ ul {
   color: var(--light-main-color);
 }
 
-/*  стиль ссылок в подвале */
-.footer__links {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-/*  цвет адреса в подвале */
-.footer__links--street {
-  color: var(--light-main-color);
-}
-
-/* цвет ховера и текущ. ссылки*/
-.footer__links:hover {
-  color: var(--accent-color);
-}
-
-.footer__links:focus {
-  color: green;
-}
-
-.footer__links:active {
-  color: red;
-}
 
 .container {
   max-width: 1200px;
@@ -587,7 +562,7 @@ h2 {
 
 /* соц линки */
 
-.footer__section {
+.footer {
   padding: 60px 0;
   /* основа цвета ШАПКИ и подвала */
   background: #2f303a;
@@ -662,6 +637,34 @@ h2 {
   letter-spacing: 0.03em;
 }
 
+/*  стиль ссылок в подвале */
+.footer__links {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*  цвет адреса в подвале */
+.footer__links--street {
+  color: var(--light-main-color);
+}
+
+/* цвет ховера и текущ. ссылки*/
+.footer__links:hover {
+  color: var(--accent-color);
+}
+
+.footer__links:focus {
+  color: green;
+}
+
+.footer__links:active {
+  color: red;
+}
+
 .socnet-link {
   width: 44px;
   height: 44px;
@@ -686,12 +689,6 @@ h2 {
   fill: var(--light-main-color);
 }
 
-/* заливаем иконки цветом */
-.svg-icons {
-  fill: var(--icons);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* заливаем иконки цветом 
 .whatwedo__icons,
 .header__icons,
@@ -699,6 +696,14 @@ h2 {
   fill: var(--icons);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }*/
+
+/* заливаем иконки цветом */
+.svg-icons {
+  fill: var(--icons);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 /* телефон и конверт  */
 .header__icons {

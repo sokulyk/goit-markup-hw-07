@@ -19,7 +19,7 @@
     <header class="header">
         <div class="container header__container">
             <nav class="header__nav">
-                <a href="./index.html" class="logo"><span class="logo-accent">Web</span><span>Studio</span></a>
+                <a href="./index.html" class="logo"><span class="logo logo--accent">Web</span><span>Studio</span></a>
                 <ul class="header__menu">
                     <li><a class="header__links" href="./index.html">Студія</a></li>
                     <li><a class="header__links header__links--current" href="./portfolio.html">Портфоліо</a></li>
@@ -205,7 +205,7 @@
         </section>
     </main>
 
-    <footer class="footer__section">
+    <footer class="footer">
         <!-- Всередині має бути дів контейнер -->
         <div class="footer__container container">
             <div>
@@ -231,6 +231,7 @@
                     <!-- </section> -->
                 </address>
             </div>
+
             <div class="footer__social-block">
                 <p class="footer__social-text">Приєднуйтесь</p>
                 <!-- 6. .socnet-header зробіть р, це не заголовок -->
@@ -258,6 +259,18 @@
                             </svg>
                         </a></li>
                 </ul>
+            </div>
+
+            <div class="footer__social-block">
+                <p class="footer__social-text">Підпишіться на розсилку</p>
+                <form class="footer__subscr-form" name="contacts-form" action="#">
+                    <input class="footer__subscr-input" type="email" placeholder="E-mail" />
+                    <button data-modal-open type="button" class="btn-primary">Підписатися
+                        <svg class="footer__icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-subscrb"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
 
         </div>
