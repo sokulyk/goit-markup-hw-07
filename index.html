@@ -22,7 +22,7 @@
             <!-- <div class="header-container"> -->
             <nav class="header__nav">
                 <a href="./index.html" class="logo">
-                    <span class="logo-accent">Web</span><span>Studio</span></a>
+                    <span class="logo logo--accent">Web</span><span>Studio</span></a>
                 <ul class="header__menu">
                     <li><a href="./index.html" class="header__links header__links--current">Студія</a></li>
                     <li><a class="header__links" href="./portfolio.html">Портфоліо</a></li>
@@ -32,12 +32,12 @@
             <!-- 4. Список .header-menu винесіть із нав     -->
 
             <ul class="header__nav-contacts">
-                <li><a class="header__contacts links" href="mailto:info@devstudio.com">
+                <li><a class="header__contacts" href="mailto:info@devstudio.com">
                         <svg class="header__icons svg-icons" width="16" height="12">
                             <use href="./images/icons.svg#icon-env"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li><a class="header__contacts links" href="tel:+380961111111">
+                <li><a class="header__contacts" href="tel:+380961111111">
                         <svg class="header__icons svg-icons" width="10" height="16">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>+38 096 111 11 11</a>
@@ -117,7 +117,7 @@
             <!-- 18. Всередині кожної секції повинен бути дів контейнер, щоб обмежити ширину контенту  -->
             <!-- <div class="whatwedo-container"> -->
             <div class="container">
-                <h2 class="whatwedo__title">Чим ми займаємося</h2>
+                <h2>Чим ми займаємося</h2>
                 <ul class="whatwedo__list">
                     <li class="whatwedo__item">
                         <img src="./images/box_1.jpg" alt="комп'ютер" width="370" height="294">
@@ -146,7 +146,7 @@
             <!-- 22. .our-team-container має бути просто .container  -->
             <!-- <div class="our-team-container"></div> -->
             <div class="container">
-                <h2 class="whatwedo__title">Наша команда</h2>
+                <h2>Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
                         <img src="./images/team_1.jpg" alt="Ігор Дем'яненко" width="270" height="260">
@@ -287,7 +287,7 @@
         <!-- постійні клієнти -->
         <section class="clients section">
             <div class="container">
-                <h2 class="whatwedo__title">Постійні клієнти</h2>
+                <h2>Постійні клієнти</h2>
                 <ul class="clients__list">
                     <li>
                         <a href="" class="clients__link">
@@ -346,22 +346,29 @@
         <!-- Всередині має бути дів контейнер -->
         <div class="footer__container container">
             <div>
-                <a href="./index.html" class="logo footer">
-                    <span class="logo-accent">Web</span><span class="logo-white">Studio</span></a>
+                <a href="./index.html" class="logo__footer">
+                    <span class="logo logo--accent">Web</span><span class="logo logo--white">Studio</span></a>
+
                 <address class="footer__address">
                     <!-- <section> -->
                     <ul>
-                        <li class="footer__address-string"><a class="links street-links"
+                        <li class="footer__address-string">
+                            <a class="footer__links footer__links--street"
                                 href="https://goo.gl/maps/GKhobsWF1xFbK7M66">м. Київ, пр-т Лесі
                                 Українки,
-                                26</a></li>
-                        <li class="footer__address-string"><a class="links foot-links"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="footer__address-string"><a class="links foot-links" href="tel:+380961111111">+38 096 111 11
-                                11</a></li>
+                                26</a>
+                        </li>
+                        <li class="footer__address-string">
+                            <a class="footer__links" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="footer__address-string">
+                            <a class="footer__links" href="tel:+380961111111">+38 096 111 11
+                                11</a>
+                        </li>
                     </ul>
                     <!-- </section> -->
                 </address>
+
             </div>
             <div class="footer__social-block">
                 <p class="footer__social-text">Приєднуйтесь</p>
@@ -370,45 +377,45 @@
                 <ul class="footer__social-list">
                     <li>
                         <a href="" class="socnet-link">
-                        <svg class="footer__icons" width="20" height="20">
-                            <use href="./images/icons.svg#icon-insta"></use>
-                        </svg></a>
+                            <svg class="footer__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-insta"></use>
+                            </svg></a>
                     </li>
                     <li>
                         <a href="" class="socnet-link">
-                        <svg class="footer__icons" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                        </a>
-                    </li>
-                    <li>
-                         <a href="" class="socnet-link">
-                        <svg class="footer__icons" width="20" height="20">
-                            <use href="./images/icons.svg#icon-fb"></use>
-                        </svg>
+                            <svg class="footer__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
                         </a>
                     </li>
                     <li>
                         <a href="" class="socnet-link">
-                        <svg class="footer__icons" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
+                            <svg class="footer__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="socnet-link">
+                            <svg class="footer__icons" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer__social-block">
-            <p class="footer__social-text">Підпишіться на розсилку</p>
-            <form class="footer__subscr-form" name="contacts-form" action="#">
-            <input class="footer__subscr-input" type="email" placeholder="E-mail" />
-            <button data-modal-open type="button" class="btn-primary">Підписатися
-                <svg class="footer__icons" width="24" height="24">
-                    <use href="./images/icons.svg#icon-subscrb"></use>
-                </svg>
-            </button>
-            </form>
-            </div>    
+                <p class="footer__social-text">Підпишіться на розсилку</p>
+                <form class="footer__subscr-form" name="contacts-form" action="#">
+                    <input class="footer__subscr-input" type="email" placeholder="E-mail" />
+                    <button data-modal-open type="button" class="btn-primary">Підписатися
+                        <svg class="footer__icons" width="24" height="24">
+                            <use href="./images/icons.svg#icon-subscrb"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
 
         </div>
     </footer>
@@ -451,15 +458,16 @@
                 </textarea>
 
                 <div class="chbx-layer">
-                <label class="chbx-label" for="terms">Погоджуюся з розсилкою та приймаю &nbsp;<a class="modal-links" href="#">Умови
-                        договору</a>
-                        
-                            <input class="chbx-form visually-hidden" id="terms" type="checkbox" name="terms">
-                            <svg class="chbx-icon" width="16" height="15">
-                                <use href="./images/icons.svg#icon-chbx"></use>
-                            </svg>
-                        
-                </label>
+                    <label class="chbx-label" for="terms">Погоджуюся з розсилкою та приймаю &nbsp;<a class="modal-links"
+                            href="#">Умови
+                            договору</a>
+
+                        <input class="chbx-form visually-hidden" id="terms" type="checkbox" name="terms">
+                        <svg class="chbx-icon" width="16" height="15">
+                            <use href="./images/icons.svg#icon-chbx"></use>
+                        </svg>
+
+                    </label>
                 </div>
                 <button type="button" class="btn-primary btn-modal">Відправити</button>
 
