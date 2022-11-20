@@ -423,47 +423,45 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <!-- h2 corrected to p -->
-            <p class="modal_header">Залиште свої дані, ми вам передзвонимо</p>
-            <form name="contacts-form" action="#">
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+            
+            <form name="form" action="#">
 
-                <label class="form-label" for="your-name">Ім'я</label>
-                <div class="form-layer">
-                    <input class="form-input" id="your-name" type="text" name="your-name">
-                    <svg class="form-icon" width="16" height="16">
+                <label class="form__label" for="your-name">Ім'я</label>
+                <div class="form__layer">
+                    <input class="form__input" id="your-name" type="text" name="your-name">
+                    <svg class="form__icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-person-f"></use>
                     </svg>
                 </div>
 
-                <label class="form-label" for="your-phone">Телефон</label>
-                <div class="form-layer">
-                    <input class="form-input" id="your-phone" type="tel" name="your-phone">
-                    <svg class="form-icon" width="16" height="16">
+                <label class="form__label" for="your-phone">Телефон</label>
+                <div class="form__layer">
+                    <input class="form__input" id="your-phone" type="tel" name="your-phone">
+                    <svg class="form__icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-phone-f"></use>
                     </svg>
                 </div>
 
-                <label class="form-label" for="your-email">Пошта</label>
-                <div class="form-layer">
-                    <input class="form-input" id="your-email" type="email" name="your-email">
-                    <svg class="form-icon" width="16" height="16">
+                <label class="form__label" for="your-email">Пошта</label>
+                <div class="form__layer">
+                    <input class="form__input" id="your-email" type="email" name="your-email">
+                    <svg class="form__icons" width="16" height="16">
                         <use href="./images/icons.svg#icon-email-f"></use>
                     </svg>
                 </div>
 
-
-
-
-                <label class="form-label" for="your-comment">Коментар</label>
-                <textarea class="form-comment" name="your-comment" id="your-comment" placeholder="Введіть текст">
+                <label class="form__label" for="your-comment">Коментар</label>
+                <textarea class="form__comment" name="your-comment" id="your-comment" placeholder="Введіть текст">
                 </textarea>
 
-                <div class="chbx-layer">
-                    <label class="chbx-label" for="terms">Погоджуюся з розсилкою та приймаю &nbsp;<a class="modal-links"
+                <div class="checkbox-form">
+                    <label class="checkbox-form-label" for="terms">Погоджуюся з розсилкою та приймаю &nbsp;<a class="form__links"
                             href="#">Умови
                             договору</a>
 
-                        <input class="chbx-form visually-hidden" id="terms" type="checkbox" name="terms">
-                        <svg class="chbx-icon" width="16" height="15">
+                        <input class="checkbox-form-input visually-hidden" id="terms" type="checkbox" name="terms">
+                        <svg class="checkbox-form-icon" width="16" height="15">
                             <use href="./images/icons.svg#icon-chbx"></use>
                         </svg>
 
@@ -472,7 +470,7 @@
                 <button type="button" class="btn-primary btn-modal">Відправити</button>
 
             </form>
-            <button class="modal-close-btn" type="button" data-modal-close>
+            <button class="modal__close-btn" type="button" data-modal-close>
                 <svg width="18" height="18">
                     <use href="./images/icons.svg#close-icon"></use>
                 </svg>

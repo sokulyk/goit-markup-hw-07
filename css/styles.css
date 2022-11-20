@@ -790,7 +790,7 @@ h2 {
   padding: 40px;
 }
 
-.modal_header {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -799,7 +799,7 @@ h2 {
   margin-bottom: 12px;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -814,11 +814,9 @@ h2 {
   justify-content: center;
 }
 
-.modal-links {
-  color: var(--accent-color);
-}
+/* форма */
 
-.form-label {
+.form__label {
   display: block;
   margin-bottom: 4px;
   /* перенёс стили текста из .modal */
@@ -828,12 +826,12 @@ h2 {
   color: var(--description-color);
 }
 
-.form-layer {
+.form__layer {
   position: relative;
   margin-bottom: 10px;
 }
 
-.form-input {
+.form__input {
   width: 100%;
   /* padding: 12px 12px 12px 32px; */
   padding: 10px 12px 10px 32px;
@@ -845,11 +843,11 @@ h2 {
   /* fill: var(--accent-color); */
 }
 
-.form-input:focus {
+.form__input:focus {
   border-color: var(--accent-color);
 }
 
-.form-icon {
+.form__icons {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
@@ -858,11 +856,11 @@ h2 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus + .form-icon {
+.form__input:focus + .form__icons {
   fill: var(--accent-color);
 }
 
-.form-comment {
+.form__comment {
   display: block;
   width: 100%;
   height: 120px;
@@ -875,13 +873,20 @@ h2 {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-comment:focus {
+.form__comment:focus {
   border-color: var(--accent-color);
 }
 
+.form__links {
+  color: var(--accent-color);
+}
+
+
+
+
 /* чекбокс */
 
-.chbx-layer {
+.checkbox-form {
   position: relative;
   display: flex;
   justify-content: center;
@@ -889,11 +894,11 @@ h2 {
   margin-bottom: 30px;
 }
 
-.chbx-form {
+.checkbox-form-input {
   appearance: none;
 }
 
-.chbx-label {
+.checkbox-form-label {
   position: relative;
   padding-left: 27px;
   /* height: 15px; */
@@ -907,7 +912,7 @@ h2 {
   color: var(--description-color);
 }
 
-.chbx-label::before {
+.checkbox-form-label::before {
   content: "";
   position: absolute;
   /* top: 0px; */
@@ -921,7 +926,7 @@ h2 {
   z-index: -1;
 }
 
-.chbx-icon {
+.checkbox-form-icon {
   padding: 2px;
   left: 0px;
   top: 4px;
@@ -933,8 +938,10 @@ h2 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.chbx-form:checked + .chbx-icon {
+.checkbox-form-input:checked + .checkbox-form-icon {
   fill: var(--light-main-color);
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+
+
